@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ngolab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body>
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Foto Logo ngolan-->
+      <div class="text-2xl font-bold text-yellow-800">
+        <img src="img/logo.png" class="w-15 h-10" />
+      </div>
+
+      <!-- Navigasi -->
+      <nav class="space-x-6">
+        <a href="beranda.html" class="text-gray-700 hover:text-orange-500">Beranda</a>
+        <a href="#menu" class="text-gray-700 hover:text-orange-500">Menu</a>
+        <a href="artikel.html" class="text-gray-700 hover:text-orange-500">Artikel</a>
+        <a href="tentang" class="text-gray-700 hover:text-orange-500">Tentang Kami</a>
+      </nav>
+    </div>
+  </header>
+
+   <!-- DESKRIPSI -->
+   <section id="deskripsiSection" class="py-10 px-6 bg-white">
+    <div class="max-w-3xl mx-auto bg-white p-6 border rounded shadow">
+      <h2 id="deskripsiTitle" class="text-2xl font-bold mb-4 text-center">Deskripsi Menu</h2>
+      <img id="deskripsiImg" src="img/makanan2.jpg" class="w-48 h-48 rounded object-cover mx-auto mb-4" alt="Gambar Menu" />
+      <p id="deskripsiNama" class="mb-2"><strong>Nama Menu:</strong> Bakso</p>
+      <p id="deskripsiHarga" class="mb-2"><strong>Harga:</strong> Rp. 56.000</p>
+      <p id="deskripsiText" class="mb-4">Deskripsi detail...</p>
+      <div class="flex justify-between">
+        <a href="beranda.html" class="bg-gray-300 text-black px-4 py-2 rounded">Kembali</a>
+        <a id="waLink" href="https://wa.me/6285895294530" target="_blank">
+          <button class="bg-orange-500 text-white px-4 py-2 rounded">Pesan Sekarang</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-yellow-400 text-black py-10">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="font-bold text-xl">Ko+Lab</h3>
+        <a href="mailto:Faisya30@gmail.com" class="text-blue-700 hover:underline">Faisya30@gmail.com</a>
+        <p class="text-sm mt-2">Gedung Selaru, Telkom University, Jl. Telekomunikasi No.1, Sukapura, Kec. Dayeuhkolot,
+          Kabupaten Bandung, Jawa Barat 40257</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw=="><img
+              src="https://cdn-icons-png.flaticon.com/24/733/733558.png" class="w-5 h-5" alt="Instagram" /></a>
+          <a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1"><img
+              src="https://cdn-icons-png.flaticon.com/24/3046/3046121.png" class="w-5 h-5" alt="TikTok" /></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Informasi</h4>
+        <ul class="text-sm">
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Ikuti kami</h4>
+        <ul class="text-sm">
+          <li><a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw==" class="hover:underline">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1" class="hover:underline">Tiktok</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Support</h4>
+        <ul class="text-sm">
+          <li><a href="#" class="hover:underline">Halal Certificate</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-6 text-sm">
+      © 2023 <a href="#" class="underline">Ngolab™</a>. All Rights Reserved.
+    </div>
+  </footer>
+
+    <!-- JS: Pisahkan dari <script src=> eksternal -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+      // Ambil semua link di nav
+      const navLinks = document.querySelectorAll('nav a');
+    
+      // Dapatkan path halaman saat ini (misal '/beranda.html')
+      const currentPath = window.location.pathname.split("/").pop();
+    
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+    
+        // Cek apakah href sama dengan currentPath
+        if (href === currentPath || (href === "#" && currentPath === "")) {
+          link.classList.remove('text-gray-700');
+          link.classList.add('text-orange-500');
+        }
+      });
+    
+    
+      </script>
+    </body>
+    
+    </html>
