@@ -5,24 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tentang Kami - Ko+Lab</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- AOS Animation CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="font-sans bg-white text-gray-800">
+<body class="overflow-x-hidden font-sans bg-white text-gray-800">
 
-  <!-- Navbar -->
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <img src="logo.png" alt="Ko+Lab" class="h-10" />
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Foto Logo ngolan-->
+      <div class="text-2xl font-bold text-yellow-800">
+        <img src="img/logo.png" class="w-15 h-10" />
+      </div>
+
+      <!-- Navigasi -->
       <nav class="space-x-6">
-        <a href="#" class="text-gray-700 hover:text-orange-500">Beranda</a>
-        <a href="#" class="text-gray-700 hover:text-orange-500">Menu</a>
-        <a href="#" class="text-gray-700 hover:text-orange-500">Lokasi</a>
-        <a href="#" class="text-orange-500 font-semibold">Tentang Kami</a>
+        <a href="beranda.html" class="text-gray-700 hover:text-orange-500">Beranda</a>
+        <a href="#menu.html" class="text-gray-700 hover:text-orange-500">Menu</a>
+        <a href="artikel.html" class="text-gray-700 hover:text-orange-500">Artikel</a>
+        <a href="tentang_kami.html" class="text-gray-700 hover:text-orange-500">Tentang Kami</a>
       </nav>
     </div>
   </header>
+
+
 
   <!-- Hero Section -->
   <section class="py-16 px-6 md:px-16 max-w-6xl mx-auto">
@@ -32,16 +41,19 @@
         <p class="text-lg text-gray-700 mb-6">
           adalah startup kuliner yang menggabungkan cita rasa autentik dengan semangat kolaborasi. Kami menghadirkan Bakso dan Mie Yamin yang terjangkau, dicintai, dan berkualitas dengan resep yang terus dikembangkan melalui inovasi.
         </p>
-        <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md transition">Watch the video</button>
-      </div>
+        <a href="https://www.youtube.com/watch?v=xfM4X6inBUk" target="_blank"
+         class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md transition inline-block">
+        Watch the video
+      </a>
+    </div>
       <img data-aos="fade-left" src="../img/kolablama.jpeg" alt="Outlet Ko+Lab" class="rounded-lg shadow-lg w-full object-cover" />
     </div>
   </section>
 
   <!-- Visi & Misi Section -->
-  <section class="bg-orange-50 py-16 px-6 md:px-16">
+  <section class="bg-orange-300 py-16 px-6 md:px-16">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-      <img data-aos="fade-right" src="../img/bakso.jpg" alt="Makanan Ko+Lab" class="rounded-xl shadow-lg w-full" />
+      <img data-aos="fade-right" src="../img/litacantik3.jpeg" alt="Makanan Ko+Lab" class="rounded-xl shadow-lg w-full h-96 object-cover" />
       <div data-aos="fade-left">
         <h3 class="text-2xl font-bold text-gray-800 mb-4">Visi</h3>
         <p class="text-base text-gray-700 mb-6">
@@ -61,40 +73,50 @@
       <h3 class="text-2xl font-bold mb-4">Operasional</h3>
       <p class="text-base text-gray-700">Ko+Lab membuka pintu setiap hari untuk mendukung kolaborasi dan pertumbuhan UMKM kuliner.</p>
       <p class="text-lg font-semibold mt-2">Setiap Hari: 10.00 - 22.00</p>
-      <button class="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition">Kunjungi Kami</button>
-    </div>
+     
+     <!-- Tombol sebagai link ke bagian #beranda -->
+    <a href="tentang_kami.html#beranda.html" 
+       class="inline-block mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition">
+      Kunjungi Kami
+    </a>
+  </div>
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 max-w-6xl mx-auto px-6">
-      <img data-aos="fade-up" src="../img/container1.jpg" alt="Tim Ko+Lab" class="rounded-md shadow-md w-full object-cover" />
-      <img data-aos="fade-up" data-aos-delay="100" src="../img/kolablama.jpeg" alt="Kolaborasi UMKM" class="rounded-md shadow-md w-full object-cover" />
-      <img data-aos="fade-up" data-aos-delay="200" src="../img/bakso.jpg" alt="Komunitas Ko+Lab" class="rounded-md shadow-md w-full object-cover" />
+      <img data-aos="fade-up" src="../img/litacantik2.jpeg" alt="Tim Ko+Lab" class="rounded-md shadow-md w-full h-64 object-cover" />
+      <img data-aos="fade-up" data-aos-delay="100" src="../img/kolablama.jpeg" alt="Kolaborasi UMKM" class="rounded-md shadow-md w-full h-64 object-cover" />
+      <img data-aos="fade-up" data-aos-delay="200" src="../img/litacantik1.jpeg" alt="Komunitas Ko+Lab" class="rounded-md shadow-md w-full h-64 object-cover" />
     </div>
   </section>
 
  <!-- Footer -->
-  <footer class="bg-orange-200 text-black py-12">
+
+  <footer class="bg-yellow-400 text-black py-10">
     <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
       <div>
-        <h3 class="font-bold text-xl mb-2">Ko+Lab</h3>
+        <h3 class="font-bold text-xl">Ko+Lab</h3>
         <a href="mailto:Faisya30@gmail.com" class="text-blue-700 hover:underline">Faisya30@gmail.com</a>
-        <p class="text-sm mt-2">Gedung Selaru, Telkom University, Jl. Telekomunikasi No.1, Bandung</p>
+        <p class="text-sm mt-2">Gedung Selaru, Telkom University, Jl. Telekomunikasi No.1, Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257</p>
         <div class="flex space-x-4 mt-4">
-          <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" class="w-5 h-5" alt="Instagram" /></a>
-          <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/3046/3046121.png" class="w-5 h-5" alt="TikTok" /></a>
+          <a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw=="><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" class="w-5 h-5" alt="Instagram" /></a>
+          <a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1"><img src="https://cdn-icons-png.flaticon.com/24/3046/3046121.png" class="w-5 h-5" alt="TikTok" /></a>
         </div>
       </div>
+
       <div>
         <h4 class="font-semibold mb-2">Informasi</h4>
         <ul class="text-sm">
           <li><a href="#" class="hover:underline">Privacy Policy</a></li>
         </ul>
       </div>
+
       <div>
         <h4 class="font-semibold mb-2">Ikuti kami</h4>
         <ul class="text-sm">
           <li><a href="#" class="hover:underline">Instagram</a></li>
-          <li><a href="#" class="hover:underline">TikTok</a></li>
+          <li><a href="#" class="hover:underline">Tiktok</a></li>
         </ul>
       </div>
+
       <div>
         <h4 class="font-semibold mb-2">Support</h4>
         <ul class="text-sm">
@@ -102,7 +124,7 @@
         </ul>
       </div>
     </div>
-    <div class="text-center mt-8 text-sm">
+    <div class="text-center mt-6 text-sm">
       © 2023 <a href="#" class="underline">Ngolab™</a>. All Rights Reserved.
     </div>
   </footer>
