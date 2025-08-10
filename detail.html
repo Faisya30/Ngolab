@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 
@@ -32,11 +32,12 @@
     </div>
   </header>
 
-   <!-- DESKRIPSI -->
-   <section id="deskripsiSection" class="py-10 px-6 bg-white">
+  <!-- DESKRIPSI -->
+  <section id="deskripsiSection" class="py-10 px-6 bg-white">
     <div class="max-w-3xl mx-auto bg-white p-6 border rounded shadow">
       <h2 id="deskripsiTitle" class="text-2xl font-bold mb-4 text-center">Deskripsi Menu</h2>
-      <img id="deskripsiImg" src="img/makanan2.jpg" class="w-48 h-48 rounded object-cover mx-auto mb-4" alt="Gambar Menu" />
+      <img id="deskripsiImg" src="img/makanan2.jpg" class="w-48 h-48 rounded object-cover mx-auto mb-4"
+        alt="Gambar Menu" />
       <p id="deskripsiNama" class="mb-2"><strong>Nama Menu:</strong> Bakso</p>
       <p id="deskripsiHarga" class="mb-2"><strong>Harga:</strong> Rp. 56.000</p>
       <p id="deskripsiText" class="mb-4">Deskripsi detail...</p>
@@ -74,8 +75,10 @@
       <div>
         <h4 class="font-semibold mb-2">Ikuti kami</h4>
         <ul class="text-sm">
-          <li><a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw==" class="hover:underline">Instagram</a></li>
-          <li><a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1" class="hover:underline">Tiktok</a></li>
+          <li><a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw=="
+              class="hover:underline">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1" class="hover:underline">Tiktok</a>
+          </li>
         </ul>
       </div>
 
@@ -91,27 +94,27 @@
     </div>
   </footer>
 
-    <!-- JS: Pisahkan dari <script src=> eksternal -->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-      // Ambil semua link di nav
-      const navLinks = document.querySelectorAll('nav a');
-    
-      // Dapatkan path halaman saat ini (misal '/beranda.html')
-      const currentPath = window.location.pathname.split("/").pop();
-    
-      navLinks.forEach(link => {
-        const href = link.getAttribute('href');
-    
-        // Cek apakah href sama dengan currentPath
-        if (href === currentPath || (href === "#" && currentPath === "")) {
-          link.classList.remove('text-gray-700');
-          link.classList.add('text-orange-500');
-        }
-      });
-    
-    
-      </script>
-    </body>
-    
-    </html>
+  <!-- JS: Pisahkan dari <script src=> eksternal -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Ambil semua link di nav
+    const navLinks = document.querySelectorAll('nav a');
+
+    // Dapatkan path halaman saat ini (misal '/beranda.html')
+    const currentPath = window.location.pathname.split("/").pop();
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+
+      // Cek apakah href sama dengan currentPath
+      if (href === currentPath || (href === "#" && currentPath === "")) {
+        link.classList.remove('text-gray-700');
+        link.classList.add('text-orange-500');
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>

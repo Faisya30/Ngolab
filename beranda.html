@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ngolab</title>
-  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body class="bg-gray-50">
+
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Foto Logo ngolan-->
@@ -23,188 +22,192 @@
       </div>
 
       <!-- Navigasi -->
-      <nav class="space-x-6 text-gray-700 font-medium">
-        <a href="#beranda" class="hover:text-yellow-600">Beranda</a>
-        <a href="#menu" class="hover:text-yellow-600">Menu</a>
-        <a href="#artikel" class="hover:text-yellow-600">Artikel</a>
-        <a href="#tentang" class="hover:text-yellow-600">Tentang Kami</a>
+      <nav class="space-x-6">
+        <a href="beranda.html" class="text-gray-700 hover:text-orange-500">Beranda</a>
+        <a href="#menu" class="text-gray-700 hover:text-orange-500">Menu</a>
+        <a href="artikel.html" class="text-gray-700 hover:text-orange-500">Artikel</a>
+        <a href="tentang" class="text-gray-700 hover:text-orange-500">Tentang Kami</a>
       </nav>
     </div>
   </header>
 
-  <section class="flex flex-col md:flex-row items-center justify-between px-1 py-10">
-    <div class="md:w-1/2 pl-4 md:pl-20 text-left animate__animated animate__fadeInLeft animate__delay-1s">
-      <span class="font-[cursive] text-4xl leading-tight mb-3 block">
-        Bakso Pak Yanto<br>dan mie Yamin Ngolab
-      </span>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        Order sekarang dan cobain kenikmatannya.
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center justify-between px-6 py-12 max-w-7xl mx-auto">
+    <div class="md:w-1/2 text-left animate__animated animate__fadeInLeft animate__delay-1s">
+      <h1 class="font-[cursive] text-4xl leading-tight mb-3 block">
+        Bakso Pak Yanto<br />
+        dan Mie Yamin Ngolab
+      </h1>
+      <p class="text-gray-700 text-lg mb-6 max-w-md">
+        Order sekarang dan cobain kenikmatannya, dijamin nagih!
       </p>
-      <a href="https://wa.me/6285895294530" target="_blank" 
-         class="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-2 rounded shadow">
+      <a href="https://wa.me/6285895294530" target="_blank"
+        class="inline-block bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-3 rounded shadow font-semibold transition">
         Order Now!
       </a>
     </div>
-  
-    <div class="md:w-1/2 mt-6 md:mt-0 flex justify-center animate__animated animate__fadeInRight animate__delay-2s">
-      <img src="img/mieyamin.jpg" class="w-[450px] h-[450px] object-cover rounded-full shadow-lg">
+    <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center animate__animated animate__fadeInRight animate__delay-2s">
+      <img src="img/mieyamin.jpg" alt="Mie Yamin Ngolab" class="w-full max-w-md h-auto rounded-full shadow-lg object-cover" />
     </div>
   </section>
-  
 
-  <section class="px-6 py-10">
-    <!-- Header -->
+  <!-- Penawaran Terbaik -->
+  <section class="px-6 py-10 max-w-7xl mx-auto">
     <div class="flex items-center justify-between mb-6">
       <h2 class="text-3xl font-bold">Penawaran Terbaik</h2>
       <a href="#" class="text-red-500 text-sm hover:underline">Lihat semua promo &gt;</a>
     </div>
-  
-    <!-- Wrapper Card -->
-    <div class="flex flex-wrap gap-6">
-      <!-- Card 1 -->
+    <div class="flex flex-wrap gap-6 justify-center">
+      <!-- Card Promo (bisa duplikat sesuaikan data) -->
       <div
-        class="bg-white shadow-md rounded-lg overflow-hidden max-w-xs transition-all duration-300 ease-in-out hover:shadow-[5px_5px_8px_rgba(255,0,0,0.5)] hover:scale-105 hover:-translate-y-1 active:shadow-inner active:scale-100 active:translate-y-0 cursor-pointer">
-        <img src="img/mieyamin.jpg" alt="Promo Merdeka" class="w-full h-40 object-cover">
-        <div class="p-4">
-          <h3 class="text-2xl font-semibold text-black-600">Promo Semarak Merdeka</h3>
-          <p class="text-sm text-gray-600 mt-1">
-            Ngolab bisa nikmatin mie+nasi goreng dengan harga spesial dengan menikmati promo semarak merdeka
+        class="bg-white shadow-md rounded-lg max-w-xs overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_rgba(255,165,0,0.3)] hover:scale-105 hover:-translate-y-1">
+        <img src="img/mieyamin.jpg" alt="Promo Semarak Merdeka" class="w-full h-44 object-cover" />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Promo Semarak Merdeka</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Nikmati mie dan nasi goreng dengan harga spesial dalam promo semarak merdeka.
           </p>
-          <button class="mt-4 bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-2 rounded shadow">
+          <a href="https://wa.me/6285895294530" target="_blank"
+            class="inline-block mt-4 bg-yellow-400 hover:bg-yellow-500 text-white px-5 py-2 rounded shadow text-center font-semibold transition">
             Pesan Sekarang!
-          </button>
+          </a>
         </div>
       </div>
-  
-      <!-- Card 2 -->
+      <!-- Duplikat promo lain -->
       <div
-        class="bg-white shadow-md rounded-lg overflow-hidden max-w-xs transition-all duration-300 ease-in-out hover:shadow-[5px_5px_8px_rgba(255,0,0,0.5)] hover:scale-105 hover:-translate-y-1 active:shadow-inner active:scale-100 active:translate-y-0 cursor-pointer">
-        <img src="img/mieyamin.jpg" alt="Promo Merdeka" class="w-full h-40 object-cover">
-        <div class="p-4">
-          <h3 class="text-2xl font-semibold text-black-600">Promo Semarak Merdeka</h3>
-          <p class="text-sm text-gray-600 mt-1">
-            Ngolab bisa nikmatin mie+nasi goreng dengan harga spesial dengan menikmati promo semarak merdeka
+        class="bg-white shadow-md rounded-lg max-w-xs overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_rgba(255,165,0,0.3)] hover:scale-105 hover:-translate-y-1">
+        <img src="img/mieyamin.jpg" alt="Promo Semarak Merdeka" class="w-full h-44 object-cover" />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Promo Semarak Merdeka</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Nikmati mie dan nasi goreng dengan harga spesial dalam promo semarak merdeka.
           </p>
-          <button class="mt-4 bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-2 rounded shadow">
+          <a href="https://wa.me/6285895294530" target="_blank"
+            class="inline-block mt-4 bg-yellow-400 hover:bg-yellow-500 text-white px-5 py-2 rounded shadow text-center font-semibold transition">
             Pesan Sekarang!
-          </button>
+          </a>
         </div>
       </div>
-  
+
+      <!-- Card Promo (bisa duplikat sesuaikan data) -->
+      <div
+        class="bg-white shadow-md rounded-lg max-w-xs overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_rgba(255,165,0,0.3)] hover:scale-105 hover:-translate-y-1">
+        <img src="img/mieyamin.jpg" alt="Promo Semarak Merdeka" class="w-full h-44 object-cover" />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Promo Semarak Merdeka</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Nikmati mie dan nasi goreng dengan harga spesial dalam promo semarak merdeka.
+          </p>
+          <a href="https://wa.me/6285895294530" target="_blank"
+            class="inline-block mt-4 bg-yellow-400 hover:bg-yellow-500 text-white px-5 py-2 rounded shadow text-center font-semibold transition">
+            Pesan Sekarang!
+          </a>
+        </div>
+      </div>
+
+      <!-- Card Promo (bisa duplikat sesuaikan data) -->
+      <div
+        class="bg-white shadow-md rounded-lg max-w-xs overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_rgba(255,165,0,0.3)] hover:scale-105 hover:-translate-y-1">
+        <img src="img/mieyamin.jpg" alt="Promo Semarak Merdeka" class="w-full h-44 object-cover" />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Promo Semarak Merdeka</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Nikmati mie dan nasi goreng dengan harga spesial dalam promo semarak merdeka.
+          </p>
+          <a href="https://wa.me/6285895294530" target="_blank"
+            class="inline-block mt-4 bg-yellow-400 hover:bg-yellow-500 text-white px-5 py-2 rounded shadow text-center font-semibold transition">
+            Pesan Sekarang!
+          </a>
+        </div>
       </div>
     </div>
   </section>
-  
 
-
-  <section id="menuSection" class="py-10">
-    <h2 class="text-center text-3xl font-bold mb-8 text-black-600">Rekomendasi Menu</h2>
-    <div class="flex justify-center">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <!-- Card 1 -->
-        <div
-          class="bg-white border rounded-lg p-4 flex flex-col items-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_8px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 active:shadow-inner active:scale-100 active:translate-y-0 cursor-pointer">
-          <span class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-bl">NEW</span>
-          <img src="img/makanan2.jpg" class="rounded-full w-40 h-40 object-cover mb-4" />
-          <h3 class="font-bold">Bakso</h3>
-          <p class="text-red-600 font-semibold">Rp. 56.000</p>
-          <div class="mt-2 flex gap-3">
-            <button
-              onclick="tampilkanDeskripsi('Bakso', 'img/makanan2.jpg', 'Bakso sapi kenyal dengan kuah kaldu gurih, dilengkapi mie dan sayur.', 'Rp. 56.000')"
-              class="text-sm text-red-500 underline">Details</button>
-            <a href="https://wa.me/6285895294530" target="_blank">
-              <button class="bg-yellow-400 text-white px-3 py-1 rounded text-sm font-semibold">+ Order</button>
-            </a>
-          </div>
-        </div>
-        <!-- Card 2: Mie Yamin -->
-        <div
-          class="bg-white border rounded-lg p-4 flex flex-col items-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_8px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 active:shadow-inner active:scale-100 active:translate-y-0 cursor-pointer">
-          <span class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-bl">Best
-            Seller</span>
-          <img src="img/mieyamin.jpg" class="rounded-full w-40 h-40 object-cover mb-4" />
-          <h3 class="font-bold">Mie Yamin</h3>
-          <p class="text-red-600 font-semibold">Rp. 60.000</p>
-          <div class="mt-2 flex gap-3">
-            <button
-              onclick="tampilkanDeskripsi('Mie Yamin', 'img/mieyamin.jpg', 'Mie yamin manis dengan topping ayam cincang dan sayuran segar.', 'Rp. 60.000')"
-              class="text-sm text-red-500 underline">Details</button>
-            <a href="https://wa.me/6285895294530" target="_blank">
-              <button class="bg-yellow-400 text-white px-3 py-1 rounded text-sm font-semibold">+ Order</button>
-            </a>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          class="bg-white border rounded-lg p-4 flex flex-col items-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_8px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 active:shadow-inner active:scale-100 active:translate-y-0 cursor-pointer">
-          <span class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-bl">NEW</span>
-          <img src="img/esjeruk.jpg " class="rounded-full w-40 h-40 object-cover mb-4" />
-          <h3 class="font-bold">es Jeruk</h3>
-          <p class="text-red-600 font-semibold">Rp. 60.000</p>
-          <div class="mt-2 flex gap-3">
-            <button onclick="tampilkanDeskripsi('Es Jeruk', 'img/mieyamin.jpg', 'Minuman segar sekali.', 'Rp. 60.000')"
-              class="text-sm text-red-500 underline">Details</button>
-            <a href="https://wa.me/6285895294530" target="_blank">
-              <button class="bg-yellow-400 text-white px-3 py-1 rounded text-sm font-semibold">+ Order</button>
-            </a>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-span-full flex justify-center">
-          <div
-            class="bg-white border rounded-lg p-4 flex flex-col items-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_8px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 active:shadow-inner active:scale-100 active:translate-y-0 cursor-pointer">
-            <span class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-bl">Best Seller</span>
-            <img src="img/makanan1.jpg " class="rounded-full w-40 h-40 object-cover mb-4" />
-            <h3 class="font-bold">Choco Trip</h3>
-            <p class="text-red-600 font-semibold">Rp. 60.000</p>
-            <div class="mt-2 flex gap-3">
-              <button
-                onclick="tampilkanDeskripsi('Choco Trip', 'img/makanan1.jpg', 'Paling Best Seller banget loh', 'Rp. 60.000')"
-                class="text-sm text-red-500 underline">Details</button>
-              <a href="https://wa.me/6285895294530" target="_blank">
-                <button class="bg-yellow-400 text-white px-3 py-1 rounded text-sm font-semibold">+ Order</button>
-              </a>
-            </div>
-          </div>
-        </div>
+  <!-- Menu Section -->
+  <section id="menuSection" class="py-10 max-w-7xl mx-auto px-6">
+    <h2 class="text-center text-3xl font-bold mb-10 text-yellow-800">Rekomendasi Menu</h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center">
+      <!-- Menu Card Template -->
+      <div
+        class="bg-white border rounded-lg p-5 flex flex-col items-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer menu-card"
+        data-name="Mie Yamin" data-price="Rp. 60.000" data-img="img/mieyamin.jpg"
+        data-desc="Mie Yamin khas Ngolab dengan rasa autentik yang nikmat. Cocok untuk makan siang dan malam.">
+        <span
+          class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">Best
+          Seller</span>
+        <img src="img/mieyamin.jpg" alt="Mie Yamin" class="rounded-full w-40 h-40 object-cover mb-4" />
+        <h3 class="font-bold text-lg mb-2">Mie Yamin</h3>
+        <p class="text-red-600 font-semibold text-lg">Rp. 60.000</p>
+      </div>
+      <!-- Duplikat kartu menu lain dengan data berbeda -->
+      <div
+        class="bg-white border rounded-lg p-5 flex flex-col items-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer menu-card"
+        data-name="Bakso Spesial" data-price="Rp. 56.000" data-img="img/bakso.jpg"
+        data-desc="Bakso spesial dengan kuah kaldu gurih dan daging bakso yang kenyal.">
+        <span
+          class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">New</span>
+        <img src="img/bakso.jpg" alt="Bakso Spesial" class="rounded-full w-40 h-40 object-cover mb-4" />
+        <h3 class="font-bold text-lg mb-2">Bakso Spesial</h3>
+        <p class="text-red-600 font-semibold text-lg">Rp. 56.000</p>
+      </div>
+      <!-- Menu Card Template -->
+      <div
+        class="bg-white border rounded-lg p-5 flex flex-col items-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer menu-card"
+        data-name="Mie Yamin" data-price="Rp. 60.000" data-img="img/mieyamin.jpg"
+        data-desc="Mie Yamin khas Ngolab dengan rasa autentik yang nikmat. Cocok untuk makan siang dan malam.">
+        <span
+          class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">Best
+          Seller</span>
+        <img src="img/mieyamin.jpg" alt="Mie Yamin" class="rounded-full w-40 h-40 object-cover mb-4" />
+        <h3 class="font-bold text-lg mb-2">Mie Yamin</h3>
+        <p class="text-red-600 font-semibold text-lg">Rp. 60.000</p>
+      </div>
+      <div
+        class="bg-white border rounded-lg p-5 flex flex-col items-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer menu-card"
+        data-name="Bakso Spesial" data-price="Rp. 56.000" data-img="img/bakso.jpg"
+        data-desc="Bakso spesial dengan kuah kaldu gurih dan daging bakso yang kenyal.">
+        <span
+          class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">New</span>
+        <img src="img/bakso.jpg" alt="Bakso Spesial" class="rounded-full w-40 h-40 object-cover mb-4" />
+        <h3 class="font-bold text-lg mb-2">Bakso Spesial</h3>
+        <p class="text-red-600 font-semibold text-lg">Rp. 56.000</p>
       </div>
     </div>
   </section>
 
   <!-- Lokasi -->
-  <section id="Section" class="py-10"> <!--bg-gray-50-->
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-center text-3xl font-bold mb-6 text-yellow-800">Lokasi Kami</h2>
-      <p class="text-center text-gray-700 mb-4">Alamat: Gedung Selaru, Telkom University, Jl. Telekomunikasi No.1,
-        Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257</p>
-      <div class="flex justify-center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7920.6183441818785!2d107.6315265!3d-6.9728038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e91a93784ddd%3A0x624acd474a796743!2sNgolab%20Express%20Cafe!5e0!3m2!1sid!2sid!4v1754381506341!5m2!1sid!2sid"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" width="100%" height="300" frameborder="0" style="border:0;"
-          allowfullscreen>
-        </iframe>
-      </div>
+  <section id="lokasiSection" class="py-10 max-w-4xl mx-auto px-6">
+    <h2 class="text-center text-3xl font-bold mb-6 text-yellow-800">Lokasi Kami</h2>
+    <p class="text-center text-gray-700 mb-6">
+      Gedung Selaru, Telkom University, Jl. Telekomunikasi No.1, Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat
+      40257
+    </p>
+    <div class="aspect-w-16 aspect-h-9 rounded overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7920.6183441818785!2d107.6315265!3d-6.9728038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e91a93784ddd%3A0x624acd474a796743!2sNgolab%20Express%20Cafe!5e0!3m2!1sid!2sid!4v1754381506341!5m2!1sid!2sid"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full"></iframe>
     </div>
   </section>
 
   <!-- Tombol WhatsApp -->
-  <a href="https://wa.me/628XXXXXXXXXX" target="_blank" aria-label="WhatsApp"
+  <a href="https://wa.me/6285895294530" target="_blank" aria-label="WhatsApp"
     class="fixed bottom-5 right-5 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <footer class="bg-yellow-400 text-black py-10">
+  <footer class="bg-yellow-400 text-black py-10 mt-20">
     <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
       <div>
         <h3 class="font-bold text-xl">Ko+Lab</h3>
         <a href="mailto:Faisya30@gmail.com" class="text-blue-700 hover:underline">Faisya30@gmail.com</a>
-        <p class="text-sm mt-2">Gedung Selaru, Telkom University, Jl. Telekomunikasi No.1, Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257</p>
+        <p class="text-sm mt-2">Gedung Selaru, Telkom University, Jl. Telekomunikasi No.1, Sukapura, Kec. Dayeuhkolot,
+          Kabupaten Bandung, Jawa Barat 40257</p>
         <div class="flex space-x-4 mt-4">
-          <a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw=="><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" class="w-5 h-5" alt="Instagram" /></a>
-          <a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1"><img src="https://cdn-icons-png.flaticon.com/24/3046/3046121.png" class="w-5 h-5" alt="TikTok" /></a>
+          <a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw=="><img
+              src="https://cdn-icons-png.flaticon.com/24/733/733558.png" class="w-5 h-5" alt="Instagram" /></a>
+          <a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1"><img
+              src="https://cdn-icons-png.flaticon.com/24/3046/3046121.png" class="w-5 h-5" alt="TikTok" /></a>
         </div>
       </div>
 
@@ -218,8 +221,8 @@
       <div>
         <h4 class="font-semibold mb-2">Ikuti kami</h4>
         <ul class="text-sm">
-          <li><a href="#" class="hover:underline">Instagram</a></li>
-          <li><a href="#" class="hover:underline">Tiktok</a></li>
+          <li><a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw==" class="hover:underline">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1" class="hover:underline">Tiktok</a></li>
         </ul>
       </div>
 
@@ -235,71 +238,57 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Inisialisasi AOS untuk animasi scroll
+    if (window.AOS) AOS.init();
 
-  <!-- DESKRIPSI (disembunyikan) -->
-  <section id="deskripsiSection" class="py-10 px-6 hidden bg-white">
-    <div class="max-w-3xl mx-auto bg-white p-6 border rounded shadow">
-      <h2 class="text-2xl font-bold mb-4 text-center">Deskripsi Menu</h2>
-      <img src="img/makanan2.jpg" class="w-48 h-48 rounded object-cover mx-auto mb-4" />
-      <p class="mb-4"><strong>Nama Menu: Bakso pak Yanto</strong> </p>
-      <p class="mb-4"><strong>Harga: Rp. 20.000</strong> </p>
-      <div class="flex justify-between">
-        <button onclick="kembaliKeBeranda()" class="bg-gray-300 text-black px-4 py-2 rounded">← Kembali</button>
-        <a href="https://wa.me/6285895294530" target="_blank">
-          <button class="bg-green-500 text-white px-4 py-2 rounded">Pesan Sekarang</button>
-        </a>
-      </div>
-    </div>
-  </section>
+    // Script untuk highlight menu nav sesuai current page
+    const navLinks = document.querySelectorAll('nav a');
+    const currentPath = window.location.pathname.split('/').pop();
 
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href === currentPath || (href === "#" && currentPath === "")) {
+        link.classList.remove('text-gray-700');
+        link.classList.add('text-orange-500');
+      }
+    });
 
+    // Script menampilkan deskripsi menu saat klik card menu
+    const menuCards = document.querySelectorAll('.menu-card');
+    const deskripsiSection = document.getElementById('deskripsiSection');
+    const deskripsiTitle = document.getElementById('deskripsiTitle');
+    const deskripsiImg = document.getElementById('deskripsiImg');
+    const deskripsiHarga = document.getElementById('deskripsiHarga');
+    const deskripsiText = document.getElementById('deskripsiText');
+    const waLink = document.getElementById('waLink');
+    const closeBtn = document.getElementById('closeDeskripsi');
 
+    menuCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const name = card.dataset.name;
+        const price = card.dataset.price;
+        const img = card.dataset.img;
+        const desc = card.dataset.desc;
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-    function tampilkanDeskripsi(nama, gambar, deskripsi, harga) {
-      // Isi ulang konten deskripsi
-      document.querySelector('#deskripsiSection h2').textContent = `Deskripsi Menu`;
-      document.querySelector('#deskripsiSection img').src = gambar;
-      document.querySelector('#deskripsiSection p:nth-of-type(1)').innerHTML = `<strong>${nama}:</strong> ${deskripsi}`;
-      document.querySelector('#deskripsiSection p:nth-of-type(2)').innerHTML = `<strong>Harga:</strong> ${harga}`;
+        deskripsiTitle.textContent = name;
+        deskripsiHarga.textContent = price;
+        deskripsiImg.src = img;
+        deskripsiImg.alt = name;
+        deskripsiText.textContent = desc;
+        waLink.href = `https://wa.me/6285895294530?text=Saya%20mau%20pesan%20${encodeURIComponent(name)}`;
 
-      // Sembunyikan section lain
-      document.getElementById('heroSection').classList.add('hidden');
-      document.getElementById('menuSection').classList.add('hidden');
-      document.getElementById('lokasiSection').classList.add('hidden');
-      document.getElementById('footerSection').classList.add('hidden');
-      // Tampilkan deskripsi
-      document.getElementById('deskripsiSection').classList.remove('hidden');
-    }
+        deskripsiSection.classList.remove('hidden');
+        window.scrollTo({ top: deskripsiSection.offsetTop - 60, behavior: 'smooth' });
+      });
+    });
 
-    function kembaliKeBeranda() {
-      document.getElementById('heroSection').classList.remove('hidden');
-      document.getElementById('menuSection').classList.remove('hidden');
-      document.getElementById('lokasiSection').classList.remove('hidden');
-      document.getElementById('footerSection').classList.remove('hidden');
-      document.getElementById('deskripsiSection').classList.add('hidden');
-    }
-
-    AOS.init();
-
-    window.addEventListener("DOMContentLoaded", () => {
-    const textBox = document.getElementById("text-box");
-    const imageBox = document.getElementById("image-box");
-
-    // Teks muncul dulu
-    setTimeout(() => {
-      textBox.classList.remove("opacity-0", "translate-x-[-50px]");
-    }, 200);
-
-    // Gambar muncul setelah teks
-    setTimeout(() => {
-      imageBox.classList.remove("opacity-0", "translate-x-[50px]");
-    }, 700);
-  });
-
-  
+    closeBtn.addEventListener('click', () => {
+      deskripsiSection.classList.add('hidden');
+      window.scrollTo({ top: document.getElementById('menuSection').offsetTop - 60, behavior: 'smooth' });
+    });
   </script>
-
 </body>
 
 </html>
