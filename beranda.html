@@ -130,48 +130,56 @@
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center">
       <!-- Menu Card Template -->
       <div
-        class="bg-white border rounded-lg p-5 flex flex-col items-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer menu-card"
+        class="bg-white border rounded-lg p-5 flex flex-col items-center text-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer menu-card"
         data-name="Mie Yamin" data-price="Rp. 60.000" data-img="img/mieyamin.jpg"
         data-desc="Mie Yamin khas Ngolab dengan rasa autentik yang nikmat. Cocok untuk makan siang dan malam.">
+        <a href="menu.html">
         <span
           class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">Best
           Seller</span>
         <img src="img/mieyamin.jpg" alt="Mie Yamin" class="rounded-full w-40 h-40 object-cover mb-4" />
         <h3 class="font-bold text-lg mb-2">Mie Yamin</h3>
         <p class="text-red-600 font-semibold text-lg">Rp. 60.000</p>
+        </a>
       </div>
       <!-- Duplikat kartu menu lain dengan data berbeda -->
       <div
-        class="bg-white border rounded-lg p-5 flex flex-col items-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer menu-card"
+        class="bg-white border rounded-lg p-5 flex flex-col items-center text-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer menu-card"
         data-name="Bakso Spesial" data-price="Rp. 56.000" data-img="img/bakso.jpg"
         data-desc="Bakso spesial dengan kuah kaldu gurih dan daging bakso yang kenyal.">
+        <a href="menu.html">
         <span
           class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">New</span>
         <img src="img/bakso.jpg" alt="Bakso Spesial" class="rounded-full w-40 h-40 object-cover mb-4" />
         <h3 class="font-bold text-lg mb-2">Bakso Spesial</h3>
         <p class="text-red-600 font-semibold text-lg">Rp. 56.000</p>
+        </a>
       </div>
       <!-- Menu Card Template -->
       <div
-        class="bg-white border rounded-lg p-5 flex flex-col items-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer menu-card"
+        class="bg-white border rounded-lg p-5 flex flex-col items-center text-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer menu-card"
         data-name="Mie Yamin" data-price="Rp. 60.000" data-img="img/mieyamin.jpg"
         data-desc="Mie Yamin khas Ngolab dengan rasa autentik yang nikmat. Cocok untuk makan siang dan malam.">
+        <a href="menu.html">
         <span
           class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">Best
           Seller</span>
         <img src="img/mieyamin.jpg" alt="Mie Yamin" class="rounded-full w-40 h-40 object-cover mb-4" />
         <h3 class="font-bold text-lg mb-2">Mie Yamin</h3>
         <p class="text-red-600 font-semibold text-lg">Rp. 60.000</p>
+        </a>
       </div>
       <div
         class="bg-white border rounded-lg p-5 flex flex-col items-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer menu-card"
         data-name="Bakso Spesial" data-price="Rp. 56.000" data-img="img/bakso.jpg"
         data-desc="Bakso spesial dengan kuah kaldu gurih dan daging bakso yang kenyal.">
+        <a href="menu.html">
         <span
           class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">New</span>
         <img src="img/bakso.jpg" alt="Bakso Spesial" class="rounded-full w-40 h-40 object-cover mb-4" />
         <h3 class="font-bold text-lg mb-2">Bakso Spesial</h3>
         <p class="text-red-600 font-semibold text-lg">Rp. 56.000</p>
+        </a>
       </div>
     </div>
   </section>
@@ -253,40 +261,6 @@
         link.classList.remove('text-gray-700');
         link.classList.add('text-orange-500');
       }
-    });
-
-    // Script menampilkan deskripsi menu saat klik card menu
-    const menuCards = document.querySelectorAll('.menu-card');
-    const deskripsiSection = document.getElementById('deskripsiSection');
-    const deskripsiTitle = document.getElementById('deskripsiTitle');
-    const deskripsiImg = document.getElementById('deskripsiImg');
-    const deskripsiHarga = document.getElementById('deskripsiHarga');
-    const deskripsiText = document.getElementById('deskripsiText');
-    const waLink = document.getElementById('waLink');
-    const closeBtn = document.getElementById('closeDeskripsi');
-
-    menuCards.forEach(card => {
-      card.addEventListener('click', () => {
-        const name = card.dataset.name;
-        const price = card.dataset.price;
-        const img = card.dataset.img;
-        const desc = card.dataset.desc;
-
-        deskripsiTitle.textContent = name;
-        deskripsiHarga.textContent = price;
-        deskripsiImg.src = img;
-        deskripsiImg.alt = name;
-        deskripsiText.textContent = desc;
-        waLink.href = `https://wa.me/6285895294530?text=Saya%20mau%20pesan%20${encodeURIComponent(name)}`;
-
-        deskripsiSection.classList.remove('hidden');
-        window.scrollTo({ top: deskripsiSection.offsetTop - 60, behavior: 'smooth' });
-      });
-    });
-
-    closeBtn.addEventListener('click', () => {
-      deskripsiSection.classList.add('hidden');
-      window.scrollTo({ top: document.getElementById('menuSection').offsetTop - 60, behavior: 'smooth' });
     });
   </script>
 </body>
