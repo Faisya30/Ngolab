@@ -13,60 +13,54 @@
   html {
     scroll-behavior: smooth;
   }
-   /* Hilangin scrollbar di semua browser */
-    ::-webkit-scrollbar {
-      display: none;
-    }
-    * {
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-    }
-  
 </style>
 
 </head>
 
-<body class="overflow-x-hidden bg-gray-50 ">
+<body class="bg-gray-50">
 
   <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <!-- Foto Logo ngolan-->
-      <div class="text-2xl font-bold text-yellow-800">
-        <img src="img/logo.png" class="w-15 h-10" />
-      </div>
+    <div class="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="beranda.html" class="flex items-center space-x-3">
+        <img src="img/logo.png" class="w-16 h-16 object-contain">
+      </a>
 
       <!-- Navigasi -->
-      <nav class="space-x-6 ">
-        <a href="beranda.html" class="text-gray-700 hover:text-orange-500">Beranda</a>
-        <a href="menu.html" class="text-gray-700 hover:text-orange-500">Menu</a>
-        <a href="artikel.html" class="text-gray-700 hover:text-orange-500">Artikel</a>
-        <a href="tentang_kami.html" class="text-gray-700 hover:text-orange-500">Tentang Kami</a>
+      <nav class="flex space-x-8 text-lg font-medium">
+        <a href="beranda.html" class="text-gray-700 hover:text-orange-500 transition-colors">Beranda</a>
+        <a href="menu.html" class="text-gray-700 hover:text-orange-500 transition-colors">Menu</a>
+        <a href="artikel.html" class="text-gray-700 hover:text-orange-500 transition-colors">Artikel</a>
+        <a href="tentang_kami.html" class="text-gray-700 hover:text-orange-500 transition-colors">Tentang Kami</a>
       </nav>
+
     </div>
   </header>
 
 
   <!-- Carousel -->
-  <div class="relative w-full overflow-hidden rounded-none">
-  <div class="flex transition-transform duration-700" id="carousel-track">
-    <img src="img/pstermenu1.jpg" class="w-full h-64 md:h-[500px] object-cover flex-shrink-0" alt="Slide 1" />
-    <img src="img/pstermenu2.jpg" class="w-full h-64 md:h-[500px] object-cover flex-shrink-0" alt="Slide 2" />
-    <img src="img/pstermenu3.jpg" class="w-full h-64 md:h-[500px] object-cover flex-shrink-0" alt="Slide 3" />
-    <!-- Clone slide pertama -->
-    <img src="img/pstermenu1.jpg" class="w-full h-64 md:h-[500px] object-cover flex-shrink-0" alt="Slide 1 Clone" />
+  <div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <div class="relative h-56 overflow-hidden md:h-96">
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="img/pstermenu2.jpg" class="absolute block w-full h-full object-cover" alt="Promo 1">
+      </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+        <img src="img/pstermenu1.jpg" class="absolute block w-full h-full object-cover" alt="Promo 2">
+      </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="img/pstermenu3.jpg" class="absolute block w-full h-full object-cover" alt="Promo 3">
+      </div>
+    </div>
+    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+      <button class="w-3 h-3 rounded-full bg-red-500" data-carousel-slide-to="0"></button>
+      <button class="w-3 h-3 rounded-full bg-gray-300" data-carousel-slide-to="1"></button>
+      <button class="w-3 h-3 rounded-full bg-gray-300" data-carousel-slide-to="2"></button>
+    </div>
   </div>
-
-  <!-- indikator tetap untuk 3 slide asli -->
-  <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-    <span class="w-3 h-3 bg-white rounded-full opacity-70" id="dot0"></span>
-    <span class="w-3 h-3 bg-white rounded-full opacity-40" id="dot1"></span>
-    <span class="w-3 h-3 bg-white rounded-full opacity-40" id="dot2"></span>
-  </div>
-</div>
-
   
 <!--button kecil-kecil-->
-  <div class="flex justify-center gap-2 p-4 items-center top-0 bg-white z-10">
+  <div class="flex gap-2 p-4 sticky top-0 bg-white z-10">
   <a href="#bakso" class="bg-yellow-400 text-xs rounded-full px-3 py-3 font-medium hover:bg-yellow-500">🍜 Bakso</a>
   <a href="#mie" class="bg-yellow-400 text-xs rounded-full px-3 py-3 font-medium hover:bg-yellow-500">🍝 Mie</a>
   <a href="#minuman" class="bg-yellow-400 text-xs rounded-full px-3 py-3 font-medium hover:bg-yellow-500">🥤 Minuman</a>
@@ -105,7 +99,7 @@
 </div>
 
 <!-- Card 2 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -122,7 +116,7 @@
 </div>
 
 <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -140,7 +134,7 @@
 
 
     <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -159,7 +153,7 @@
      
 
     <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -187,7 +181,7 @@
     <div class="flex gap-8">
       
      <!-- Card 1 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
   <!-- Bagian menuju halaman detail -->
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
@@ -207,7 +201,7 @@
 </div>
 
 <!-- Card 2 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -224,7 +218,7 @@
 </div>
 
 <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -242,7 +236,7 @@
 
 
     <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -269,7 +263,7 @@
     <div class="flex gap-8">
       
      <!-- Card 1 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
   <!-- Bagian menuju halaman detail -->
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
@@ -289,7 +283,7 @@
 </div>
 
 <!-- Card 2 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -306,7 +300,7 @@
 </div>
 
 <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -324,7 +318,7 @@
 
 
     <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -348,7 +342,7 @@
   <!-- Footer -->
   
   <!-- Tombol WhatsApp -->
-   <a href="https://wa.me/6285895294530" target="_blank" aria-label="WhatsApp"
+  <a href="https://wa.me/628XXXXXXXXXX" target="_blank" aria-label="WhatsApp"
     class="fixed bottom-5 right-5 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition">
     <i class="fab fa-whatsapp"></i>
   </a>
@@ -393,7 +387,6 @@
   </footer>
 
   <script>
-
     // Script untuk highlight menu nav sesuai current page
     const navLinks = document.querySelectorAll('nav a');
     const currentPath = window.location.pathname.split('/').pop();
@@ -405,33 +398,6 @@
         link.classList.add('text-orange-500');
       }
     });
-
-    const track = document.getElementById("carousel-track");
-    const slides = track.children.length;
-    const dots = [document.getElementById("dot0"), document.getElementById("dot1"), document.getElementById("dot2")];
-    let index = 0;
-
-    function update() {
-      track.style.transition = "transform 0.7s ease";
-      track.style.transform = `translateX(-${index * 100}%)`;
-
-      // update dots (reset ke 0 saat di slide clone terakhir)
-      dots.forEach((dot, i) => dot.style.opacity = i === (index % (slides -1)) ? "0.7" : "0.4");
-
-      if (index === slides -1) {
-        setTimeout(() => {
-          track.style.transition = "none";
-          track.style.transform = "translateX(0)";
-          index = 0;
-        }, 700);
-      }
-    }
-
-    setInterval(() => {
-      index++;
-      update();
-    }, 3000);
-
   </script>
 </body>
 </html>

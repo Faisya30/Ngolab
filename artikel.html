@@ -2,146 +2,121 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ngolab - Artikel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artikel - Ngolab</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
-<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+<body class="flex flex-col min-h-screen">
 
   <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <!-- Foto Logo ngolan-->
-      <div class="text-2xl font-bold text-yellow-800">
-        <img src="img/logo.png" class="w-15 h-10" />
-      </div>
+    <div class="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="beranda.html" class="flex items-center space-x-3">
+        <img src="img/logo.png" class="w-16 h-16 object-contain">
+      </a>
 
       <!-- Navigasi -->
-      <nav class="space-x-6">
-        <a href="beranda.html" class="text-gray-700 hover:text-orange-500">Beranda</a>
-        <a href="menu.html" class="text-gray-700 hover:text-orange-500">Menu</a>
-        <a href="artikel.html" class="text-gray-700 hover:text-orange-500">Artikel</a>
-        <a href="tentang_kami.html" class="text-gray-700 hover:text-orange-500">Tentang Kami</a>
+      <nav class="flex space-x-8 text-lg font-medium">
+        <a href="beranda.html" class="text-gray-700 hover:text-orange-500 transition-colors">Beranda</a>
+        <a href="menu.html" class="text-gray-700 hover:text-orange-500 transition-colors">Menu</a>
+        <a href="artikel.html" class="text-gray-700 hover:text-orange-500 transition-colors">Artikel</a>
+        <a href="tentang_kami.html" class="text-gray-700 hover:text-orange-500 transition-colors">Tentang Kami</a>
       </nav>
+
     </div>
   </header>
 
-      <!-- Mobile Menu Button -->
-      <button id="menu-btn" class="md:hidden focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
+  <!-- Artikel Detail -->
+  <main class="container mx-auto px-4 sm:px-6 py-10 flex-grow">
+    <button onclick="window.location.href='artikel.html'" class="mb-6 inline-flex bg-gray-300 text-black px-4 py-2 rounded">
+      Kembali
+    </button>
+     
+    <h1 class="text-2xl sm:text-3xl font-bold text-center mb-6">5 Cara Cerdas Atur Uang Jajan Anak Rantau</h1>
+    
+    <div class="flex justify-center mb-6">
+      <img src="img/Money.jpg" alt="Ilustrasi Uang" class="rounded-md max-w-full" />
     </div>
 
-    <!-- Mobile Menu -->
-    <nav id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
-      <a href="beranda.html" class="block px-6 py-3 border-b border-gray-200 hover:bg-orange-50 hover:text-orange-500 transition">Beranda</a>
-      <a href="#menu" class="block px-6 py-3 border-b border-gray-200 hover:bg-orange-50 hover:text-orange-500 transition">Menu</a>
-      <a href="artikel.html" class="block px-6 py-3 border-b border-gray-200 hover:bg-orange-50 hover:text-orange-500 transition">Artikel</a>
-      <a href="tentang" class="block px-6 py-3 hover:bg-orange-50 hover:text-orange-500 transition">Tentang Kami</a>
-    </nav>
-  </header>
+    <div class="text-center text-gray-700 mb-8 px-4 sm:px-24">
+      <p>Menjadi anak rantau bukan hanya soal tinggal jauh dari orang tua, tapi juga belajar mandiri — terutama dalam hal keuangan.<br/>
+      Uang jajan yang dikirim setiap bulan harus cukup untuk kebutuhan hidup, kuliah, hingga hiburan. Supaya nggak “nangis dompet” di akhir bulan, yuk simak 5 tips cerdas berikut ini!</p>
+    </div>
 
-  <!-- Konten Artikel -->
-  <main class="container mx-auto px-6 py-10 flex-grow">
-    <h1 class="text-3xl font-extrabold mb-10 text-center text-orange-500">Artikel Terbaru</h1>
+    <div class="text-gray-800 space-y-6 px-4 sm:px-24 text-justify">
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      <!-- Artikel Card Template (pakai data-aos untuk animasi scroll) -->
-      <article class="bg-white rounded-xl shadow-md hover:shadow-[0_10px_40px_10px_rgba(0,0,0,0.15)] transition-shadow duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="100">
-        <img src="img/Money.jpg" alt="Artikel" class="rounded-t-xl w-full h-52 object-cover" />
-        <div class="p-6">
-          <p class="text-sm text-gray-400 mb-2">07/08/2024</p>
-          <h2 class="font-bold text-xl mb-4 hover:text-orange-500 transition-colors">5 Cara Cerdas Atur Uang Jajan Anak Rantau</h2>
-          <a href="isiartikel.html" class="inline-block text-orange-500 font-semibold hover:underline">Baca Selengkapnya →</a>
-        </div>
-      </article>
+      <div>
+        <strong>1. Catat Semua Pengeluaran Harian</strong>
+        <p>Langkah pertama dan paling penting adalah mencatat pengeluaranmu setiap hari. Banyak mahasiswa yang tidak sadar uangnya cepat habis karena tidak pernah tahu ke mana saja perginya. Kamu bisa menggunakan buku catatan kecil, atau lebih praktis lagi, gunakan Google Sheets atau aplikasi seperti Money Lover. Catat pengeluaran sekecil apa pun, bahkan jajan kopi Rp5.000 pun masukin. Dengan begitu, kamu bisa tahu pos mana yang paling boros dan mulai menguranginya.</p>
+      </div>
 
-      <!-- Duplicate dengan delay berbeda untuk efek bertingkat -->
-      <article class="bg-white rounded-xl shadow-md hover:shadow-[0_10px_40px_10px_rgba(0,0,0,0.15)] transition-shadow duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="200">
-        <img src="img/Money.jpg" alt="Artikel" class="rounded-t-xl w-full h-52 object-cover" />
-        <div class="p-6">
-          <p class="text-sm text-gray-400 mb-2">07/08/2024</p>
-          <h2 class="font-bold text-xl mb-4 hover:text-orange-500 transition-colors">5 Cara Cerdas Atur Uang Jajan Anak Rantau</h2>
-          <a href="isiartikel.html" class="inline-block text-orange-500 font-semibold hover:underline">Baca Selengkapnya →</a>
-        </div>
-      </article>
+      <div>
+        <strong>2. Terapkan Aturan 50:30:20</strong>
+        <p>Agar uangmu lebih tertata, kamu bisa menerapkan prinsip 50:30:20 dalam pembagian uang jajan bulanan:</p>
+        <ul class="list-disc ml-6">
+          <li>50% untuk kebutuhan pokok seperti makan, kos, transportasi, dan kuota.</li>
+          <li>30% untuk keinginan seperti nongkrong, nonton, atau jajan online.</li>
+          <li>20% untuk tabungan, dana darurat, atau bayar cicilan (jika ada).</li>
+        </ul>
+        <p>Dengan sistem ini, kamu bisa belajar membedakan mana yang kebutuhan dan mana yang hanya keinginan.</p>
+      </div>
 
-      <article class="bg-white rounded-xl shadow-md hover:shadow-[0_10px_40px_10px_rgba(0,0,0,0.15)] transition-shadow duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="300">
-        <img src="img/Money.jpg" alt="Artikel" class="rounded-t-xl w-full h-52 object-cover" />
-        <div class="p-6">
-          <p class="text-sm text-gray-400 mb-2">07/08/2024</p>
-          <h2 class="font-bold text-xl mb-4 hover:text-orange-500 transition-colors">5 Cara Cerdas Atur Uang Jajan Anak Rantau</h2>
-          <a href="isiartikel.html" class="inline-block text-orange-500 font-semibold hover:underline">Baca Selengkapnya →</a>
-        </div>
-      </article>
+      <div>
+        <strong>3. Gunakan E-Wallet yang Punya Fitur Budgeting</strong>
+        <p>Zaman sekarang, e-wallet bukan hanya untuk bayar-bayar saja. Banyak aplikasi dompet digital yang sudah dilengkapi fitur budgeting. Contohnya, kamu bisa atur limit mingguan, pantau pengeluaran berdasarkan kategori, bahkan dapat notifikasi saat kamu mulai boros. Pilih e-wallet yang user-friendly dan bisa membantu kamu tetap disiplin.</p>
+      </div>
 
-      <!-- Tambah artikel lainnya sesuai kebutuhan -->
-      <article class="bg-white rounded-xl shadow-md hover:shadow-[0_10px_40px_10px_rgba(0,0,0,0.15)] transition-shadow duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="400">
-        <img src="img/Money.jpg" alt="Artikel" class="rounded-t-xl w-full h-52 object-cover" />
-        <div class="p-6">
-          <p class="text-sm text-gray-400 mb-2">07/08/2024</p>
-          <h2 class="font-bold text-xl mb-4 hover:text-orange-500 transition-colors">5 Cara Cerdas Atur Uang Jajan Anak Rantau</h2>
-          <a href="isiartikel.html" class="inline-block text-orange-500 font-semibold hover:underline">Baca Selengkapnya →</a>
-        </div>
-      </article>
+      <div>
+        <strong>4. Belanja Mingguan, Bukan Harian</strong>
+        <p>Kalau kamu terbiasa beli makanan atau kebutuhan sehari-hari secara harian, cobalah ubah kebiasaan ini jadi belanja sekali seminggu. Selain lebih hemat, kamu juga bisa lebih terencana. Misalnya, beli sayur, telur, dan bumbu dapur untuk seminggu. Bawa list belanja agar tidak tergoda beli yang tidak penting. Belanja mingguan juga bikin kamu lebih hemat waktu dan energi.</p>
+      </div>
 
-      <article class="bg-white rounded-xl shadow-md hover:shadow-[0_10px_40px_10px_rgba(0,0,0,0.15)] transition-shadow duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="500">
-        <img src="img/Money.jpg" alt="Artikel" class="rounded-t-xl w-full h-52 object-cover" />
-        <div class="p-6">
-          <p class="text-sm text-gray-400 mb-2">07/08/2024</p>
-          <h2 class="font-bold text-xl mb-4 hover:text-orange-500 transition-colors">5 Cara Cerdas Atur Uang Jajan Anak Rantau</h2>
-          <a href="isiartikel.html" class="inline-block text-orange-500 font-semibold hover:underline">Baca Selengkapnya →</a>
-        </div>
-      </article>
+      <div>
+        <strong>5. Masak Sendiri Minimal 3x Seminggu</strong>
+        <p>Makan di luar atau pesan online memang praktis, tapi dompetmu bisa cepat “kering”. Solusinya? Coba biasakan masak sendiri minimal 3 kali dalam seminggu. Masakan sederhana seperti nasi goreng, mie tumis, atau telur dadar sudah cukup. Selain lebih hemat, kamu juga bisa menjaga kebersihan dan kesehatan makananmu. Bonusnya, kamu bisa eksplor menu baru dan mungkin malah jadi jago masak!</p>
+      </div>
 
-      <article class="bg-white rounded-xl shadow-md hover:shadow-[0_10px_40px_10px_rgba(0,0,0,0.15)] transition-shadow duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="600">
-        <img src="img/Money.jpg" alt="Artikel" class="rounded-t-xl w-full h-52 object-cover" />
-        <div class="p-6">
-          <p class="text-sm text-gray-400 mb-2">07/08/2024</p>
-          <h2 class="font-bold text-xl mb-4 hover:text-orange-500 transition-colors">5 Cara Cerdas Atur Uang Jajan Anak Rantau</h2>
-          <a href="isiartikel.html" class="inline-block text-orange-500 font-semibold hover:underline">Baca Selengkapnya →</a>
-        </div>
-      </article>
+      <div class="text-center mt-8">
+        <p class="font-medium">Dengan menerapkan lima cara ini, kamu bisa hidup lebih teratur dan bebas dari stres akhir bulan. Ingat, jadi anak rantau itu bukan berarti hidup susah, tapi kesempatan buat belajar lebih mandiri. Yuk mulai atur keuanganmu dari sekarang!</p>
+      </div>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-yellow-400 text-black py-10 mt-auto">
-    <div class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+  <footer class="bg-yellow-400 text-black py-10">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
       <div>
-        <h3 class="font-bold text-xl mb-2">Ko+Lab</h3>
+        <h3 class="font-bold text-xl">Ko+Lab</h3>
         <a href="mailto:Faisya30@gmail.com" class="text-blue-700 hover:underline">Faisya30@gmail.com</a>
-        <p class="text-sm mt-2">Gedung Selaru, Telkom University,<br />Jl. Telekomunikasi No.1, Sukapura,<br />Kec. Dayeuhkolot, Kabupaten Bandung,<br />Jawa Barat 40257</p>
+        <p class="text-sm mt-2">Gedung Selaru, Telkom University, Jl. Telekomunikasi No.1, Sukapura, Kec. Dayeuhkolot,
+          Kabupaten Bandung, Jawa Barat 40257</p>
         <div class="flex space-x-4 mt-4">
-          <a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw==">
-            <img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram" class="w-6 h-6" />
-          </a>
-          <a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1">
-            <img src="https://cdn-icons-png.flaticon.com/24/3046/3046121.png" alt="TikTok" class="w-6 h-6" />
-          </a>
+          <a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw=="><img
+              src="https://cdn-icons-png.flaticon.com/24/733/733558.png" class="w-5 h-5" alt="Instagram" /></a>
+          <a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1"><img
+              src="https://cdn-icons-png.flaticon.com/24/3046/3046121.png" class="w-5 h-5" alt="TikTok" /></a>
         </div>
       </div>
 
       <div>
-        <h4 class="font-semibold mb-3">Informasi</h4>
-        <ul class="text-sm space-y-1">
+        <h4 class="font-semibold mb-2">Informasi</h4>
+        <ul class="text-sm">
           <li><a href="#" class="hover:underline">Privacy Policy</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="font-semibold mb-3">Ikuti kami</h4>
-        <ul class="text-sm space-y-1">
+        <h4 class="font-semibold mb-2">Ikuti kami</h4>
+        <ul class="text-sm">
           <li><a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw==" class="hover:underline">Instagram</a></li>
           <li><a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1" class="hover:underline">Tiktok</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="font-semibold mb-3">Support</h4>
-        <ul class="text-sm space-y-1">
+        <h4 class="font-semibold mb-2">Support</h4>
+        <ul class="text-sm">
           <li><a href="#" class="hover:underline">Halal Certificate</a></li>
         </ul>
       </div>
@@ -151,35 +126,27 @@
     </div>
   </footer>
 
-  <!-- Script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 700,
-      easing: 'ease-in-out',
-      once: true,
-    });
-
-    // Toggle mobile menu
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    // Highlight active nav link (optional, based on pathname)
+  <!-- JS: Pisahkan dari <script src=> eksternal -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    // Ambil semua link di nav
     const navLinks = document.querySelectorAll('nav a');
-    const currentPath = window.location.pathname.split('/').pop();
-
+  
+    // Dapatkan path halaman saat ini (misal '/beranda.html')
+    const currentPath = window.location.pathname.split("/").pop();
+  
     navLinks.forEach(link => {
       const href = link.getAttribute('href');
-      if(href === currentPath || (href === "#" && currentPath === "")) {
-        link.classList.add('text-orange-500');
+  
+      // Cek apakah href sama dengan currentPath
+      if (href === currentPath || (href === "#" && currentPath === "")) {
         link.classList.remove('text-gray-700');
+        link.classList.add('text-orange-500');
       }
     });
+  
+  
+    </script>
 
-  </script>
 </body>
 </html>
