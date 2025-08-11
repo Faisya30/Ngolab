@@ -13,11 +13,20 @@
   html {
     scroll-behavior: smooth;
   }
+   /* Hilangin scrollbar di semua browser */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    * {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+  
 </style>
 
 </head>
 
-<body class="bg-gray-50">
+<body class="overflow-x-hidden bg-gray-50 ">
 
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -39,7 +48,7 @@
 
   <!-- Carousel -->
   <div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <div class="relative h-56 overflow-hidden md:h-96">
+    <div class=" h-56 overflow-hidden md:h-96">
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
         <img src="img/pstermenu2.jpg" class="absolute block w-full h-full object-cover" alt="Promo 1">
       </div>
@@ -97,7 +106,7 @@
 </div>
 
 <!-- Card 2 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -114,7 +123,7 @@
 </div>
 
 <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -132,7 +141,7 @@
 
 
     <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -151,7 +160,7 @@
      
 
     <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -179,7 +188,7 @@
     <div class="flex gap-8">
       
      <!-- Card 1 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
   <!-- Bagian menuju halaman detail -->
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
@@ -199,7 +208,7 @@
 </div>
 
 <!-- Card 2 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -216,7 +225,7 @@
 </div>
 
 <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -234,7 +243,7 @@
 
 
     <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -261,7 +270,7 @@
     <div class="flex gap-8">
       
      <!-- Card 1 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
   <!-- Bagian menuju halaman detail -->
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
@@ -281,7 +290,7 @@
 </div>
 
 <!-- Card 2 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -298,7 +307,7 @@
 </div>
 
 <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -316,7 +325,7 @@
 
 
     <!-- Card 3 -->
-<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-md transition duration-200">
+<div class="min-w-[300px] bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
   <a href="detail.html" class="block p-4">
     <img src="img/makanan2.jpg" alt="Mie Bakso" class="rounded-md mb-4 w-full h-40 object-cover">
     <h3 class="font-bold text-sm">Mie Bakso</h3>
@@ -341,7 +350,7 @@
   
   <!-- Tombol WhatsApp -->
   <a href="https://wa.me/628XXXXXXXXXX" target="_blank" aria-label="WhatsApp"
-    class="fixed bottom-5 right-5 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition">
+    class="fixed bottom-5 right-5 z-[9999]">
     <i class="fab fa-whatsapp"></i>
   </a>
 
