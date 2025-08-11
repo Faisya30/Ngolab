@@ -47,24 +47,23 @@
 
 
   <!-- Carousel -->
-  <div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <div class=" h-56 overflow-hidden md:h-96">
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="img/pstermenu2.jpg" class="absolute block w-full h-full object-cover" alt="Promo 1">
-      </div>
-      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-        <img src="img/pstermenu1.jpg" class="absolute block w-full h-full object-cover" alt="Promo 2">
-      </div>
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="img/pstermenu3.jpg" class="absolute block w-full h-full object-cover" alt="Promo 3">
-      </div>
-    </div>
-    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-      <button class="w-3 h-3 rounded-full bg-red-500" data-carousel-slide-to="0"></button>
-      <button class="w-3 h-3 rounded-full bg-gray-300" data-carousel-slide-to="1"></button>
-      <button class="w-3 h-3 rounded-full bg-gray-300" data-carousel-slide-to="2"></button>
-    </div>
+  <div class="relative w-full overflow-hidden rounded-none">
+  <div class="flex transition-transform duration-700" id="carousel-track">
+    <img src="img/pstermenu1.jpg" class="w-full h-64 md:h-[500px] object-cover flex-shrink-0" alt="Slide 1" />
+    <img src="img/pstermenu2.jpg" class="w-full h-64 md:h-[500px] object-cover flex-shrink-0" alt="Slide 2" />
+    <img src="img/pstermenu3.jpg" class="w-full h-64 md:h-[500px] object-cover flex-shrink-0" alt="Slide 3" />
+    <!-- Clone slide pertama -->
+    <img src="img/pstermenu1.jpg" class="w-full h-64 md:h-[500px] object-cover flex-shrink-0" alt="Slide 1 Clone" />
   </div>
+
+  <!-- indikator tetap untuk 3 slide asli -->
+  <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+    <span class="w-3 h-3 bg-white rounded-full opacity-70" id="dot0"></span>
+    <span class="w-3 h-3 bg-white rounded-full opacity-40" id="dot1"></span>
+    <span class="w-3 h-3 bg-white rounded-full opacity-40" id="dot2"></span>
+  </div>
+</div>
+
   
 <!--button kecil-kecil-->
   <div class="flex justify-center gap-2 p-4 items-center top-0 bg-white z-10">
@@ -394,6 +393,7 @@
   </footer>
 
   <script>
+
     // Script untuk highlight menu nav sesuai current page
     const navLinks = document.querySelectorAll('nav a');
     const currentPath = window.location.pathname.split('/').pop();
@@ -405,6 +405,33 @@
         link.classList.add('text-orange-500');
       }
     });
+
+    const track = document.getElementById("carousel-track");
+    const slides = track.children.length;
+    const dots = [document.getElementById("dot0"), document.getElementById("dot1"), document.getElementById("dot2")];
+    let index = 0;
+
+    function update() {
+      track.style.transition = "transform 0.7s ease";
+      track.style.transform = `translateX(-${index * 100}%)`;
+
+      // update dots (reset ke 0 saat di slide clone terakhir)
+      dots.forEach((dot, i) => dot.style.opacity = i === (index % (slides -1)) ? "0.7" : "0.4");
+
+      if (index === slides -1) {
+        setTimeout(() => {
+          track.style.transition = "none";
+          track.style.transform = "translateX(0)";
+          index = 0;
+        }, 700);
+      }
+    }
+
+    setInterval(() => {
+      index++;
+      update();
+    }, 3000);
+
   </script>
 </body>
 </html>
