@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ngolab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    /* Hilangkan scrollbar tapi tetap bisa scroll */
+    .scrollbar-none::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
+    }
+    .scrollbar-none {
+      -ms-overflow-style: none; /* IE dan Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden bg-gray-50">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="beranda.html" class="flex items-center space-x-3">
+        <img src="img/logo.png" class="w-16 h-16 object-contain">
+      </a>
+
+      <!-- Navigasi -->
+      <nav class="flex space-x-8 text-lg font-medium">
+        <a href="beranda.html" class="text-gray-700 hover:text-orange-500 transition-colors">Beranda</a>
+        <a href="menu.html" class="text-gray-700 hover:text-orange-500 transition-colors">Menu</a>
+        <a href="artikel.html" class="text-gray-700 hover:text-orange-500 transition-colors">Postingan</a>
+        <a href="tentang_kami.html" class="text-gray-700 hover:text-orange-500 transition-colors">Tentang Kami</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+ <!-- Hero Full Screen -->
+<section class="flex flex-col md:flex-row items-center justify-between h-screen max-w-full">
+  <!-- Text -->
+  <div class="md:w-1/2 p-8 text-left animate__animated animate__fadeInLeft animate__delay-1s">
+    <h1 class="font-[cursive] text-5xl leading-tight mb-3">
+      Bakso Mas Yanto<br />
+      dan Mie Yamin Ngolab
+    </h1>
+    <p class="text-gray-700 text-lg mb-6 max-w-md">
+      Order sekarang dan cobain kenikmatannya, dijamin nagih!
+    </p>
+    <a href="https://wa.me/6285895294530" target="_blank"
+      class="inline-block bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-3 rounded shadow font-semibold transition">
+      Order Now!
+    </a>
+  </div>
+
+  <!-- Image -->
+  <div class="md:w-1/2 h-full flex justify-center items-center">
+    <img src="img/mieyamin.jpg" 
+         alt="Mie Ayam" 
+         class="w-[500px] h-[500px] object-cover rounded-full shadow-lg" />
+  </div>
+</section>
+
+
+
+<!-- Penawaran Terbaik -->
+<section class="px-6 py-10 max-w-7xl mx-auto">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-3xl font-bold">Penawaran Terbaik</h2>
+    <a href="#" class="text-red-500 text-sm hover:underline">Lihat semua promo &gt;</a>
+  </div>
+
+  <!-- Container scroll horizontal -->
+  <div class="flex gap-6 overflow-x-auto pb-4 scrollbar-none">
+    <!-- Card Promo -->
+    <div
+      class="min-w-[300px] bg-white shadow-md rounded-lg w-64 flex-shrink-0 overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_rgba(255,165,0,0.3)] hover:scale-105 hover:-translate-y-1">
+      <img src="img/mieyamin.jpg" alt="Promo Semarak Merdeka" class="w-full h-44 object-cover" />
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-2">Promo Semarak Merdeka</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Nikmati mie dan nasi goreng dengan harga spesial dalam promo semarak merdeka.
+        </p>
+        <a href="https://wa.me/6285895294530" target="_blank"
+          class="inline-block mt-4 bg-yellow-400 hover:bg-yellow-500 text-white px-5 py-2 rounded shadow text-center font-semibold transition">
+          Pesan Sekarang!
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="min-w-[300px] bg-white shadow-md rounded-lg w-64 flex-shrink-0 overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_rgba(255,165,0,0.3)] hover:scale-105 hover:-translate-y-1">
+      <img src="img/mieyamin.jpg" alt="Promo Semarak Merdeka" class="w-full h-44 object-cover" />
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-2">Promo Semarak Merdeka</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Nikmati mie dan nasi goreng dengan harga spesial dalam promo semarak merdeka.
+        </p>
+        <a href="https://wa.me/6285895294530" target="_blank"
+          class="inline-block mt-4 bg-yellow-400 hover:bg-yellow-500 text-white px-5 py-2 rounded shadow text-center font-semibold transition">
+          Pesan Sekarang!
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="min-w-[300px] bg-white shadow-md rounded-lg w-64 flex-shrink-0 overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_rgba(255,165,0,0.3)] hover:scale-105 hover:-translate-y-1">
+      <img src="img/mieyamin.jpg" alt="Promo Semarak Merdeka" class="w-full h-44 object-cover" />
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-2">Promo Semarak Merdeka</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Nikmati mie dan nasi goreng dengan harga spesial dalam promo semarak merdeka.
+        </p>
+        <a href="https://wa.me/6285895294530" target="_blank"
+          class="inline-block mt-4 bg-yellow-400 hover:bg-yellow-500 text-white px-5 py-2 rounded shadow text-center font-semibold transition">
+          Pesan Sekarang!
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="min-w-[300px] bg-white shadow-md rounded-lg w-64 flex-shrink-0 overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_rgba(255,165,0,0.3)] hover:scale-105 hover:-translate-y-1">
+      <img src="img/mieyamin.jpg" alt="Promo Semarak Merdeka" class="w-full h-44 object-cover" />
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-2">Promo Semarak Merdeka</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Nikmati mie dan nasi goreng dengan harga spesial dalam promo semarak merdeka.
+        </p>
+        <a href="https://wa.me/6285895294530" target="_blank"
+          class="inline-block mt-4 bg-yellow-400 hover:bg-yellow-500 text-white px-5 py-2 rounded shadow text-center font-semibold transition">
+          Pesan Sekarang!
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="min-w-[300px] bg-white shadow-md rounded-lg w-64 flex-shrink-0 overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_rgba(255,165,0,0.3)] hover:scale-105 hover:-translate-y-1">
+      <img src="img/mieyamin.jpg" alt="Promo Semarak Merdeka" class="w-full h-44 object-cover" />
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-2">Promo Semarak Merdeka</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Nikmati mie dan nasi goreng dengan harga spesial dalam promo semarak merdeka.
+        </p>
+        <a href="https://wa.me/6285895294530" target="_blank"
+          class="inline-block mt-4 bg-yellow-400 hover:bg-yellow-500 text-white px-5 py-2 rounded shadow text-center font-semibold transition">
+          Pesan Sekarang!
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="min-w-[300px] bg-white shadow-md rounded-lg w-64 flex-shrink-0 overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_rgba(255,165,0,0.3)] hover:scale-105 hover:-translate-y-1">
+      <img src="img/mieyamin.jpg" alt="Promo Semarak Merdeka" class="w-full h-44 object-cover" />
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-2">Promo Semarak Merdeka</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Nikmati mie dan nasi goreng dengan harga spesial dalam promo semarak merdeka.
+        </p>
+        <a href="https://wa.me/6285895294530" target="_blank"
+          class="inline-block mt-4 bg-yellow-400 hover:bg-yellow-500 text-white px-5 py-2 rounded shadow text-center font-semibold transition">
+          Pesan Sekarang!
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+<!-- Menu Section -->
+<section id="menuSection" class="py-10 max-w-7xl mx-auto px-6">
+  <h2 class="text-center text-3xl font-bold mb-10 text-yellow-800">Rekomendasi Menu</h2>
+
+  <!-- Container flex horizontal -->
+  <div class="flex gap-8 overflow-x-auto scrollbar-none pb-4 overflow-visible">
+    <!-- Menu Card Template -->
+    <div
+    class="min-w-[300px] bg-white border rounded-lg p-5 flex flex-col items-center text-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer flex-shrink-0 w-64 overflow-visible hover:z-10"
+      data-name="Mie Yamin" data-price="Rp. 60.000" data-img="img/mieyamin.jpg"
+      data-desc="Mie Yamin khas Ngolab dengan rasa autentik yang nikmat. Cocok untuk makan siang dan malam.">
+
+      <a href="menu.html" class="flex flex-col items-center">
+        <span
+  class="absolute top-[14px] right-0 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">
+  Best Seller
+</span>
+
+        <img src="img/mieyamin.jpg" alt="Mie Yamin" class="rounded-full w-40 h-40 object-cover mb-4" />
+        <h3 class="font-bold text-lg mb-2">Mie Yamin</h3>
+        <p class="text-red-600 font-semibold text-lg">Rp. 60.000</p>
+        <p class="text-gray-800 font-normal text-base">Campur bakso urat, bakso halus</p>
+      </a>
+    </div>
+
+    <div
+    class="min-w-[300px] bg-white border rounded-lg p-5 flex flex-col items-center text-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer flex-shrink-0 w-64"
+    data-name="Mie Yamin" data-price="Rp. 60.000" data-img="img/mieyamin.jpg"
+    data-desc="Mie Yamin khas Ngolab dengan rasa autentik yang nikmat. Cocok untuk makan siang dan malam.">
+
+    <a href="menu.html" class="flex flex-col items-center">
+      <span
+  class="absolute top-[14px] right-0 bg-red-400 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">
+  New
+</span>
+
+      <img src="img/mieyamin.jpg" alt="Mie Yamin" class="rounded-full w-40 h-40 object-cover mb-4" />
+      <h3 class="font-bold text-lg mb-2">Mie Yamin</h3>
+      <p class="text-red-600 font-semibold text-lg">Rp. 60.000</p>
+      <p class="text-gray-800 font-normal text-base">Campur bakso urat, bakso halus</p>
+    </a>
+  </div>
+
+  <div
+  class="min-w-[300px] bg-white border rounded-lg p-5 flex flex-col items-center text-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer flex-shrink-0 w-64"
+  data-name="Mie Yamin" data-price="Rp. 60.000" data-img="img/mieyamin.jpg"
+  data-desc="Mie Yamin khas Ngolab dengan rasa autentik yang nikmat. Cocok untuk makan siang dan malam.">
+
+  <a href="menu.html" class="flex flex-col items-center">
+    <span
+  class="absolute top-[14px] right-0 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">
+  Best Seller
+</span>
+
+    <img src="img/mieyamin.jpg" alt="Mie Yamin" class="rounded-full w-40 h-40 object-cover mb-4" />
+    <h3 class="font-bold text-lg mb-2">Mie Yamin</h3>
+    <p class="text-red-600 font-semibold text-lg">Rp. 60.000</p>
+    <p class="text-gray-800 font-normal text-base">Campur bakso urat, bakso halus</p>
+  </a>
+</div>
+
+<div
+class="min-w-[300px] bg-white border rounded-lg p-5 flex flex-col items-center text-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer flex-shrink-0 w-64"
+data-name="Mie Yamin" data-price="Rp. 60.000" data-img="img/mieyamin.jpg"
+data-desc="Mie Yamin khas Ngolab dengan rasa autentik yang nikmat. Cocok untuk makan siang dan malam.">
+
+<a href="menu.html" class="flex flex-col items-center">
+  <span
+  class="absolute top-[14px] right-0 bg-red-400 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">
+  New
+</span>
+
+  <img src="img/mieyamin.jpg" alt="Mie Yamin" class="rounded-full w-40 h-40 object-cover mb-4" />
+  <h3 class="font-bold text-lg mb-2">Mie Yamin</h3>
+  <p class="text-red-600 font-semibold text-lg">Rp. 60.000</p>
+  <p class="text-gray-800 font-normal text-base">Campur bakso urat, bakso halus</p>
+</a>
+</div>
+
+<div
+class="min-w-[300px] bg-white border rounded-lg p-5 flex flex-col items-center text-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer flex-shrink-0 w-64"
+data-name="Mie Yamin" data-price="Rp. 60.000" data-img="img/mieyamin.jpg"
+data-desc="Mie Yamin khas Ngolab dengan rasa autentik yang nikmat. Cocok untuk makan siang dan malam.">
+
+<a href="menu.html" class="flex flex-col items-center">
+  <span
+    class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">
+    Best Seller
+  </span>
+  <img src="img/mieyamin.jpg" alt="Mie Yamin" class="rounded-full w-40 h-40 object-cover mb-4" />
+  <h3 class="font-bold text-lg mb-2">Mie Yamin</h3>
+  <p class="text-red-600 font-semibold text-lg">Rp. 60.000</p>
+  <p class="text-gray-800 font-normal text-base">Campur bakso urat, bakso halus</p>
+</a>
+</div>
+
+<div
+class="min-w-[300px] bg-white border rounded-lg p-5 flex flex-col items-center text-center relative shadow transition-all duration-300 ease-in-out hover:shadow-[5px_5px_15px_rgba(251,158,58,0.5)] hover:scale-105 hover:-translate-y-1 cursor-pointer flex-shrink-0 w-64"
+data-name="Mie Yamin" data-price="Rp. 60.000" data-img="img/mieyamin.jpg"
+data-desc="Mie Yamin khas Ngolab dengan rasa autentik yang nikmat. Cocok untuk makan siang dan malam.">
+
+<a href="menu.html" class="flex flex-col items-center">
+  <span
+    class="absolute top-0 right-0 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-bl select-none">
+    Best Seller
+  </span>
+  <img src="img/mieyamin.jpg" alt="Mie Yamin" class="rounded-full w-40 h-40 object-cover mb-4" />
+  <h3 class="font-bold text-lg mb-2">Mie Yamin</h3>
+  <p class="text-red-600 font-semibold text-lg">Rp. 60.000</p>
+  <p class="text-gray-800 font-normal text-base">Campur bakso urat, bakso halus</p>
+</a>
+</div>
+    <!-- Duplikat card lainnya... -->
+  </div>
+</section>
+
+  <!-- Lokasi -->
+  <section id="lokasiSection" class="py-10 max-w-4xl mx-auto px-6">
+    <h2 class="text-center text-3xl font-bold mb-6 text-yellow-800">Lokasi Kami</h2>
+    <p class="text-center text-gray-700 mb-6">
+      Gedung Selaru, Telkom University, Jl. Telekomunikasi No.1, Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa
+      Barat
+      40257
+    </p>
+    <div class="aspect-w-16 aspect-h-9 rounded overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7920.6183441818785!2d107.6315265!3d-6.9728038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e91a93784ddd%3A0x624acd474a796743!2sNgolab%20Express%20Cafe!5e0!3m2!1sid!2sid!4v1754381506341!5m2!1sid!2sid"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full"></iframe>
+    </div>
+  </section>
+
+  <!-- Tombol WhatsApp -->
+  <a href="https://wa.me/6285895294530" target="_blank" aria-label="WhatsApp"
+    class="fixed bottom-5 right-5 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer class="bg-yellow-400 text-black py-10 mt-20">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="font-bold text-xl">Ko+Lab</h3>
+        <a href="mailto:Faisya30@gmail.com" class="text-blue-700 hover:underline">Faisya30@gmail.com</a>
+        <p class="text-sm mt-2">Gedung Selaru, Telkom University, Jl. Telekomunikasi No.1, Sukapura, Kec. Dayeuhkolot,
+          Kabupaten Bandung, Jawa Barat 40257</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw=="><img
+              src="https://cdn-icons-png.flaticon.com/24/733/733558.png" class="w-5 h-5" alt="Instagram" /></a>
+          <a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1"><img
+              src="https://cdn-icons-png.flaticon.com/24/3046/3046121.png" class="w-5 h-5" alt="TikTok" /></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Informasi</h4>
+        <ul class="text-sm">
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Ikuti kami</h4>
+        <ul class="text-sm">
+          <li><a href="https://www.instagram.com/ngolabcafe?igsh=MW04cmZwMnd2cG5zNw=="
+              class="hover:underline">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@warmingupid?_t=ZS-8yh44z3eMYZ&_r=1" class="hover:underline">Tiktok</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Support</h4>
+        <ul class="text-sm">
+          <li><a href="#" class="hover:underline">Halal Certificate</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-6 text-sm">
+      © 2023 <a href="#" class="underline">Ngolab™</a>. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Inisialisasi AOS untuk animasi scroll
+    if (window.AOS) AOS.init();
+
+    // Script untuk highlight menu nav sesuai current page
+    const navLinks = document.querySelectorAll('nav a');
+    const currentPath = window.location.pathname.split('/').pop();
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href === currentPath || (href === "#" && currentPath === "")) {
+        link.classList.remove('text-gray-700');
+        link.classList.add('text-orange-500');
+      }
+    });
+  </script>
+</body>
+
+</html>
